@@ -2,113 +2,125 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bridge</title>
-  <link rel="stylesheet" href="style.css">
+
+  <!-- FONT -->
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- ICON -->
   <link rel="icon" type="image/png" href="imagens/isologo.png">
+
+  <!-- PWA (futuro) -->
+  <!-- <link rel="manifest" href="manifest.json"> -->
 </head>
 <body>
 
 <div class="frame">
 
+  <!-- ================= HEADER / APP BAR ================= -->
   <header class="navbar">
-    <div class="logo">
-      <img src="imagens/logobridge.png" alt="Flavo Logo">
-    </div>
-<div class="menu-toggle">
-  <span></span>
-  <span></span>
-  <span></span>
-</div>
 
+    <div class="logo">
+      <img src="imagens/logobridge.png" alt="Bridge">
+    </div>
+
+    <!-- HAMBURGER -->
+    <div class="menu-toggle" aria-label="Abrir menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- MENU -->
     <nav>
-      <a>Trilha Guiada</a>
-      <a>Conteúdos Práticos</a>
-      <a>Nosso Projeto</a>
-      <a>Teste de Perfil</a>
-      <a>A TCS</a>
+      <a href="#">Trilha Guiada</a>
+      <a href="#">Conteúdos Práticos</a>
+      <a href="#">Nosso Projeto</a>
+      <a href="#">Teste de Perfil</a>
+      <a href="#">A TCS</a>
     </nav>
 
+    <!-- PROFILE -->
     <a href="perfil.html" class="profile-link" aria-label="Meu Perfil">
-  <img src="imagens/icone-perfil.png" alt="Meu Perfil">
-</a>
+      <img src="imagens/icone-perfil.png" alt="Perfil">
+    </a>
 
   </header>
 
+  <!-- ================= HERO ================= -->
   <section class="hero">
+
     <div class="hero-text">
-      <h1><b>DESCUBRA<br>SEU CAMINHO</b></h1>
-      <p>Tomar decisões sobre trabalho e futuro não é fácil — especialmente quando ninguém te explicou por onde começar. A <b>Bridge</b> existe para te ajudar a dar o <b>próximo passo</b>, com clareza e sem julgamento.</p>
-      <button><b>SAIBA MAIS</b></button>
+      <h1>DESCUBRA<br>SEU CAMINHO</h1>
+      <p>
+        Tomar decisões sobre trabalho e futuro não é fácil — especialmente quando ninguém te explicou por onde começar.
+        A <strong>Bridge</strong> existe para te ajudar a dar o <strong>próximo passo</strong>, com clareza e sem julgamento.
+      </p>
+      <button>SAIBA MAIS</button>
     </div>
 
     <div class="hero-image">
-      <img src="imagens/imgcontgrande.jpeg">
+      <img src="imagens/imgcontgrande.jpeg" alt="Estudante planejando o futuro">
     </div>
+
   </section>
 
+  <!-- ================= TICKER ================= -->
   <div class="ticker">
-    ㅤㅤORIENTAÇÃO · PROPÓSITO · ESCOLHAS · CAMINHOS · ORIENTAÇÃO · PROPÓSITO · ESCOLHAS · CAMINHOS · ORIENTAÇÃO · PROPÓSITO · ESCOLHAS
+    ORIENTAÇÃO · PROPÓSITO · ESCOLHAS · CAMINHOS · ORIENTAÇÃO · PROPÓSITO · ESCOLHAS · CAMINHOS
   </div>
 
+  <!-- ================= PRODUCTS ================= -->
   <section class="products">
 
-    <div class="card">
-      <h1>TRILHA</h1>
-      <img src="imagens/imgcont1.png">
-      <div class="qty"></div>
-      <button class="buy"><b>VEJA AQUI</b></button>
-    </div>
+    <article class="card">
+      <h2>TRILHA</h2>
+      <img src="imagens/imgcont1.png" alt="Trilha guiada">
+      <button class="buy">VEJA AQUI</button>
+    </article>
 
-    <div class="card">
-      <h1>CONTEÚDO</h1>
-      <img src="imagens/imgcont2.png">
-      <div class="qty"></div>
-      <button class="buy"><b>VEJA AQUI</b></button>
-    </div>
+    <article class="card">
+      <h2>CONTEÚDO</h2>
+      <img src="imagens/imgcont2.png" alt="Conteúdos práticos">
+      <button class="buy">VEJA AQUI</button>
+    </article>
 
-    <div class="card">
-      <h1>NOSSO PROJETO</h1>
-      <img src="imagens/imgcont3.png">
-      <div class="qty"></div>
-      <button class="buy"><b>VEJA AQUI</b></button>
-    </div>
+    <article class="card">
+      <h2>NOSSO PROJETO</h2>
+      <img src="imagens/imgcont3.png" alt="Nosso projeto">
+      <button class="buy">VEJA AQUI</button>
+    </article>
 
   </section>
 
-  <!-- FOOTER ADICIONADO -->
+  <!-- ================= FOOTER (FINAL SECTION) ================= -->
   <footer class="footer">
+
     <div class="footer-content">
 
       <div class="footer-logo">
-        <img src="imagens/logobridge.png" alt="Bridge Logo">
+        <img src="imagens/logobridge.png" alt="Bridge">
         <p>Orientação para escolhas conscientes de futuro.</p>
       </div>
 
       <div class="footer-links">
-        <h4>Plataforma</h4>
         <a href="#">Trilha Guiada</a>
         <a href="#">Conteúdos Práticos</a>
         <a href="#">Teste de Perfil</a>
-      </div>
-
-      <div class="footer-links">
-        <h4>Institucional</h4>
-        <a href="#">Nosso Projeto</a>
-        <a href="#">A TCS</a>
         <a href="#">Contato</a>
       </div>
 
     </div>
 
-    <div class="footer-bottom">
-      <p>© 2026 Bridge. Todos os direitos reservados.</p>
-    </div>
   </footer>
-  <!-- FIM DO FOOTER -->
 
 </div>
 
+<!-- JS -->
 <script src="script.js"></script>
 </body>
 </html>
