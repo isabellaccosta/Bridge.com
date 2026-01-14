@@ -80,3 +80,13 @@ document.querySelectorAll('a[href]').forEach(link => {
 
 /* ================= SAFE INIT ================= */
 console.log('Bridge app JS loaded');
+/* MANIFESTO – DESKTOP + MOBILE */
+const manifestoBox = document.querySelector('.manifesto-box');
+
+if(manifestoBox){
+  manifestoBox.addEventListener('click', ()=>{
+    manifestoBox.classList.toggle('active');
+  });
+}
+
+console.log('Bridge OK');

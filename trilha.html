@@ -1,0 +1,148 @@
+<!DOCTYPE html> 
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bridge - Minha Trilha</title>
+    <link rel="stylesheet" href="trilha.css">
+    <link rel="icon" type="image/png" href="imagens/isologo.png">
+</head>
+<body>
+
+    <!-- HEADER ORIGINAL -->
+    <header>
+        <div class="logo">
+            <img src="imagens/logobridge.png" alt="Bridge">
+        </div>
+        <nav>
+            <a href="home.html">Início</a>
+            <a href="#">Conteúdos Práticos</a>
+            <a href="#">Nosso Projeto</a>
+            <a href="#">Teste de Perfil</a>
+            <a href="#">A TCS</a>
+        </nav>
+        <a href="#" class="btn-telegram">telegram</a>
+    </header>
+
+    <!-- HERO ORIGINAL -->
+    <section class="hero">
+        <div class="cards-container">
+            <div class="card card-pink" style="transform: rotate(-5deg);">
+                <span class="badge"><strong>Quem eu sou?</strong></span>
+                <img src="imagens/card1.png">
+            </div>
+
+            <div class="card card-purple" style="transform: translateY(-20px);">
+                <div class="card-text">
+                    O que o mercado quer de <strong>verdade?</strong>
+                </div>
+                <img src="imagens/card2.png">
+            </div>
+
+            <div class="card card-green" style="transform: rotate(5deg);">
+                <span class="badge">
+                    <strong>Como eu me preparo sem ter tudo perfeito?</strong>
+                </span>
+                <img src="imagens/card3.png">
+            </div>
+
+            <div class="card card-orange" style="transform: rotate(8deg) translateY(10px);">
+                <span class="badge">
+                    <strong>Qual é meu próximo passo real?</strong>
+                </span>
+                <img src="imagens/card4.png">
+            </div>
+        </div>
+
+        <div class="hero-title-area">
+            <h1>Sua trilha começa aqui.</h1>
+            <div class="hero-actions">
+                <button class="btn-cta" id="startTrail">
+                    Começar trilha
+                </button>
+                <p>Você não precisa saber tudo agora.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES ORIGINAL -->
+    <section class="features">
+        <h2>O que você vai aprender</h2>
+        <div class="tags-cloud">
+            <span class="tag">Autoconhecimento</span>
+            <span class="tag">Mercado de trabalho</span>
+            <span class="tag">Currículo</span>
+            <span class="tag">Entrevistas</span>
+            <span class="tag">Primeiro emprego</span>
+            <span class="tag">Faculdade</span>
+            <span class="tag">Cursos gratuitos</span>
+            <span class="tag">Próximos passos</span>
+        </div>
+    </section>
+
+    <!-- FORMATS ORIGINAL -->
+    <section class="formats">
+        <h2>Aprendizado <span>prático</span></h2>
+        <div class="format-grid">
+            <div class="format-card">
+                <img src="imagens/iconraposa.png" class="format-img">
+                <span class="label">online</span>
+                <p>No seu ritmo</p>
+            </div>
+
+            <div class="format-card">
+                <img src="imagens/iconraposa.png" class="format-img">
+                <span class="label">offline</span>
+                <p>Sem pressão</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= EXTENSÃO: TRILHA ================= -->
+    <section class="trail-lessons">
+
+        <div class="trail-progress">
+            <span id="progressText">0 / 10 concluídas</span>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+        </div>
+
+        <div class="lesson-grid">
+            <div class="lesson-box" data-lesson="1">Quem eu sou</div>
+            <div class="lesson-box" data-lesson="2">Habilidades</div>
+            <div class="lesson-box" data-lesson="3">Mercado</div>
+            <div class="lesson-box" data-lesson="4">Currículo</div>
+            <div class="lesson-box" data-lesson="5">Experiências</div>
+            <div class="lesson-box" data-lesson="6">Entrevista</div>
+            <div class="lesson-box" data-lesson="7">Carteira</div>
+            <div class="lesson-box" data-lesson="8">Cursos</div>
+            <div class="lesson-box" data-lesson="9">Vagas</div>
+            <div class="lesson-box" data-lesson="10">Próximo passo</div>
+        </div>
+
+    </section>
+
+    <!-- MODAL -->
+    <div class="lesson-modal" id="lessonModal">
+        <div class="lesson-content">
+            <button class="close-modal">×</button>
+            <h3 id="lessonTitle"></h3>
+            <div id="lessonBody"></div>
+            <button class="btn-cta" id="completeLesson">
+                Concluir etapa
+            </button>
+        </div>
+    </div>
+
+    <!-- FINAL -->
+    <div class="final-modal" id="finalModal">
+        <div class="final-content">
+            <h2>🎉 Parabéns!</h2>
+            <p>Você concluiu sua trilha.</p>
+        </div>
+    </div>
+
+    <script src="trilha.js"></script>
+</body>
+</html>
