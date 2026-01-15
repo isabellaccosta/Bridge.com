@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    /* ================= SEU CÓDIGO (CORRIGIDO) ================= */
     const cards = document.querySelectorAll('.card');
 
     cards.forEach((card, index) => {
@@ -20,16 +19,17 @@ document.addEventListener('DOMContentLoaded', () => {
         return rotations[index] || 0;
     }
 
-    /* ================= EXTENSÃO TRILHA ================= */
     const lessons = document.querySelectorAll('.lesson-box');
     const modal = document.getElementById('lessonModal');
     const title = document.getElementById('lessonTitle');
     const body = document.getElementById('lessonBody');
-    const close = document.querySelector('.close-modal');
+    const closeLesson = document.querySelector('.close-modal');
     const completeBtn = document.getElementById('completeLesson');
+
     const progressFill = document.getElementById('progressFill');
     const progressText = document.getElementById('progressText');
     const finalModal = document.getElementById('finalModal');
+    const closeFinal = document.querySelector('.close-final');
 
     let completed = JSON.parse(localStorage.getItem('bridgeProgress')) || [];
     let current = null;
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
             current = box.dataset.lesson;
             title.textContent = `Etapa ${current}`;
             body.innerHTML = `
-                <p>Conteúdo guiado passo a passo.</p>
+                <p>Conteúdo guiado passo a passo:</p>
                 <ul>
                     <li>Reflexão prática</li>
                     <li>Exemplo real</li>
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    close.onclick = () => modal.style.display = 'none';
+    closeLesson.onclick = () => modal.style.display = 'none';
 
     completeBtn.onclick = () => {
         if (!completed.includes(current)) {
@@ -69,6 +69,11 @@ document.addEventListener('DOMContentLoaded', () => {
             finalModal.style.display = 'flex';
         }
     }
+
+    closeFinal.onclick = () => {
+        finalModal.style.display = 'none';
+        document.getElementById('trilhas').scrollIntoView({ behavior: 'smooth' });
+    };
 
     updateProgress();
 });

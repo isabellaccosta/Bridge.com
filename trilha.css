@@ -112,7 +112,7 @@ nav a {
 }
 
 .btn-cta {
-    background-color: var(--accent-green);
+    background-color: #c8d69b;
     border: none;
     padding: 15px 32px;
     border-radius: 30px;
@@ -142,10 +142,10 @@ nav a {
 }
 
 .tag {
-    background: white;
+    background: #f6e6a5;
     padding: 12px 25px;
     border-radius: 50px;
-    border: 1px solid #eee;
+    border: 1px solid #343b1b;
     font-size: 0.85rem;
     box-shadow: 0 5px 15px rgba(0,0,0,0.03);
 }
@@ -161,7 +161,7 @@ nav a {
 }
 
 .formats h2 span {
-    color: var(--accent-purple);
+    color: #3971b8;
 }
 
 .format-grid {
@@ -185,7 +185,7 @@ nav a {
 
 .label {
     display: inline-block;
-    background: var(--accent-pink);
+    background: #c8d69b;
     padding: 5px 20px;
     border-radius: 15px;
     font-weight: bold;
@@ -198,7 +198,7 @@ nav a {
 
 .trail-lessons {
     padding: 80px 6%;
-    background: linear-gradient(180deg, #fbfcee, #f6e6a5);
+    background: linear-gradient(180deg, #fbfcee, #c8d69b);
 }
 
 /* PROGRESSO */
@@ -211,7 +211,7 @@ nav a {
 .progress-bar {
     width: 100%;
     height: 10px;
-    background: #ddd;
+    background: #f6e6a5;
     border-radius: 20px;
     overflow: hidden;
     margin-top: 10px;
@@ -220,7 +220,7 @@ nav a {
 .progress-fill {
     height: 100%;
     width: 0%;
-    background: linear-gradient(90deg, #3971b8, #39b88e);
+    background: #3971b8;
     transition: width .5s ease;
 }
 
@@ -232,7 +232,7 @@ nav a {
 }
 
 .lesson-box {
-    background: white;
+    background: #f6e6a5;
     border-radius: 22px;
     padding: 30px 20px;
     text-align: center;
@@ -241,6 +241,7 @@ nav a {
     position: relative;
     transition: transform .4s ease, box-shadow .4s ease;
     box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    color: #343b1b;
 }
 
 .lesson-box::after {
@@ -262,7 +263,7 @@ nav a {
 .lesson-modal {
     position: fixed;
     inset: 0;
-    background: rgba(0,0,0,.6);
+    background: rgba(160, 206, 146, 0.6);
     display: none;
     align-items: center;
     justify-content: center;
@@ -270,7 +271,7 @@ nav a {
 }
 
 .lesson-content {
-    background: #fbfcee;
+    background: #f6e6a5;
     border-radius: 28px;
     padding: 40px 32px;
     width: min(90%, 420px);
@@ -298,22 +299,41 @@ nav a {
 
 /* ================= FINAL ================= */
 .final-modal {
+    display: none;
     position: fixed;
     inset: 0;
-    background: radial-gradient(circle, #39b88e, #3971b8);
-    display: none;
+    background: rgba(0,0,0,0.6);
     align-items: center;
     justify-content: center;
-    z-index: 1000;
+    z-index: 9999;
 }
 
 .final-content {
-    background: white;
-    padding: 60px 40px;
-    border-radius: 30px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 25px;
     text-align: center;
-    animation: pop .6s ease;
+    position: relative;
+    animation: pop .4s ease;
 }
+
+.close-final {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #555;
+}
+
+.close-final:hover {
+    color: #000;
+    transform: scale(1.15);
+}
+
 
 /* ================= ANIMAÇÕES ================= */
 @keyframes modalUp {

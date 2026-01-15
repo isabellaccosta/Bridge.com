@@ -57,15 +57,12 @@
         <div class="hero-title-area">
             <h1>Sua trilha começa aqui.</h1>
             <div class="hero-actions">
-                <button class="btn-cta" id="startTrail">
-                    Começar trilha
-                </button>
                 <p>Você não precisa saber tudo agora.</p>
             </div>
         </div>
     </section>
 
-    <!-- FEATURES ORIGINAL -->
+    <!-- FEATURES -->
     <section class="features">
         <h2>O que você vai aprender</h2>
         <div class="tags-cloud">
@@ -80,7 +77,7 @@
         </div>
     </section>
 
-    <!-- FORMATS ORIGINAL -->
+    <!-- FORMATS -->
     <section class="formats">
         <h2>Aprendizado <span>prático</span></h2>
         <div class="format-grid">
@@ -98,8 +95,8 @@
         </div>
     </section>
 
-    <!-- ================= EXTENSÃO: TRILHA ================= -->
-    <section class="trail-lessons">
+    <!-- TRILHA -->
+    <section class="trail-lessons" id="trilhas">
 
         <div class="trail-progress">
             <span id="progressText">0 / 10 concluídas</span>
@@ -123,26 +120,25 @@
 
     </section>
 
-    <!-- MODAL -->
+    <!-- MODAL AULA -->
     <div class="lesson-modal" id="lessonModal">
         <div class="lesson-content">
             <button class="close-modal">×</button>
             <h3 id="lessonTitle"></h3>
             <div id="lessonBody"></div>
-            <button class="btn-cta" id="completeLesson">
-                Concluir etapa
-            </button>
+            <button class="btn-cta" id="completeLesson">Concluir etapa</button>
         </div>
     </div>
 
     <!-- FINAL -->
     <div class="final-modal" id="finalModal">
         <div class="final-content">
-            <h2>🎉 Parabéns!</h2>
-            <p>Você concluiu sua trilha.</p>
+            <button class="close-final">×</button>
+            <h1>🎉 Parabéns!</h1>
+            <h2>Você concluiu sua trilha.</h2>
         </div>
     </div>
 
-    <script src="trilha.js"></script>
+<script src="trilha.js"></script>
 </body>
 </html>
