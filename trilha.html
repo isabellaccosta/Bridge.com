@@ -82,15 +82,17 @@
         <h2>Aprendizado <span>prático</span></h2>
         <div class="format-grid">
             <div class="format-card">
-                <img src="imagens/iconraposa.png" class="format-img">
-                <span class="label">online</span>
-                <p>No seu ritmo</p>
+                <img src="imagens/contrilha1.jpeg" class="format-img">
+                <h1>🔎 Descubra seu ponto forte</h1>
+                <span class="label">Você já tem algo valioso — <br>só ainda não sabe nomear</span>
+                <p>Você vai aprender a identificar habilidades que já usa no dia a dia (mesmo fora da escola ou do trabalho) e transformar isso em algo concreto. Quando você entende no que é boa, estudar deixa de ser obrigação e vira estratégia.</p>
             </div>
 
             <div class="format-card">
-                <img src="imagens/iconraposa.png" class="format-img">
-                <span class="label">offline</span>
-                <p>Sem pressão</p>
+                <img src="imagens/contrilha2.jpeg" class="format-img">
+                <h1>🚀 Transforme estudo em ação</h1>
+                <span class="label">Menos teoria solta, mais movimento real</span>
+                <p>Aqui você aprende como sair do “estou estudando, mas não sei pra quê” e dar pequenos passos práticos que já te colocam mais perto de oportunidades reais. Cada conteúdo vira uma ação simples, possível e aplicável agora.</p>
             </div>
         </div>
     </section>
@@ -121,23 +123,29 @@
     </section>
 
     <!-- MODAL AULA -->
-    <div class="lesson-modal" id="lessonModal">
-        <div class="lesson-content">
-            <button class="close-modal">×</button>
-            <h3 id="lessonTitle"></h3>
-            <div id="lessonBody"></div>
-            <button class="btn-cta" id="completeLesson">Concluir etapa</button>
-        </div>
-    </div>
+<div class="lesson-modal" id="lessonModal">
+    <div class="lesson-content">
 
-    <!-- FINAL -->
-    <div class="final-modal" id="finalModal">
-        <div class="final-content">
-            <button class="close-final">×</button>
-            <h1>🎉 Parabéns!</h1>
-            <h2>Você concluiu sua trilha.</h2>
+        <button class="close-modal">×</button>
+
+        <h3 id="lessonTitle"></h3>
+
+        <!-- CONTROLES DE ACESSIBILIDADE -->
+        <div class="lesson-audio-controls">
+            <button id="playAudio">🔊 Ouvir aula</button>
         </div>
+
+        <!-- CONTEÚDO COM SCROLL -->
+        <div class="lesson-body-scroll" id="lessonBody"></div>
+
+            <button class="btn-cta" id="completeLesson">
+                Concluir etapa
+            </button>
+        </div>
+
     </div>
+</div>
+
 
 <script src="trilha.js"></script>
 </body>
